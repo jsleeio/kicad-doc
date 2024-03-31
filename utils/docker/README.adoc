@@ -2,3 +2,11 @@
 ## kicad-doc-builder-base
 
 This creates a base container image with the tools required to build the docs repo without going through the process of installing over a gigabyte of tools each time.
+
+There is a helper script here that you can use to build both the base image (if your Docker daemon doesn't already have an image) and the docs in PDF format:
+
+```
+./utils/docker/build-in-docker.sh
+```
+
+Further information can be obtained by running it with the `-h` option.
